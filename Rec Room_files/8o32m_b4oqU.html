@@ -11,17 +11,19 @@
         height: 100%; 
         overflow: hidden; 
         background-color: transparent; 
+        
+        /* Centering Rules */
+        display: flex;
+        justify-content: center; /* Centers the video horizontally (Left to Right) */
+        align-items: center;     /* Centers the video vertically (Top to Bottom) */
     }
     video { 
-        width: 100vw;   /* Force the video width to match the mobile viewport width */
-        height: 100vh;  /* Force the video height to match the mobile viewport height */
-        object-fit: cover; /* Stretches the video cleanly to ensure NO blank gaps appear on mobile */
+        width: 100%; 
+        height: 100%; 
+        object-fit: contain; 
     }
 </style>
 
-        html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: #000; }
-        video { width: 100%; height: 100%; object-fit: cover; }
-    </style>
 </head>
 <body>
     <!-- Plays a direct clean archive stream of the 2022 trailer -->
